@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="IMG/icons8-google-code-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class = "header">
+        <h1>CONTACT FORM</h1>
+    </header>
+    <nav class = "nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="contactForm.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main class = "main contactContent">
+        <section class = "form">
+            <form id="contactForm">
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" placeholder="Type your name">
+                <label for="userEmail">E-mail:</label>
+                <input type="email" id="userEmail" placeholder="Type your email adress">
+                <label for="userCommment">Comment:</label>
+                <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Write your comment"></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+        <section class = "comments">
+            <div id="logComments"></div>
+        </section>
+    </main>
+    <footer class = "footer">
+        <div class="contact">
+            <p class = "name">Roser Cañameras Vidal</p>
+            <p class = "email"><a href="mailto:rosercvidal@gmail.com">rosercvidal@gmail.com</a></p>
+        </div>
+        <div class = "socialMedia">
+            <a href =  "https://github.com/RockVi" target=" _blank">
+                <img src="IMG/githubColorMatch.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

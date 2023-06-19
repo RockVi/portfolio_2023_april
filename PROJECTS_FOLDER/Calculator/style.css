@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Display GRID */
+.calculator{
+    margin-top: 5rem;
+    padding: 2rem;
+    border: 1px solid blue;
+    border-radius: 2%;
+    background-color: black;
+    display: grid;
+    grid-template-areas:'auto auto auto auto';
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Atribució de les posicions dels elements dins el GRID */
+
+.display{
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+.numbers{
+    grid-area: 2 / 1 / span 4 / span 3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+/* Especificitat del botó ZERO */
+#zero{
+    grid-area: 4 / 1 / span 1 / span 3;
+}
+
+.symbols{
+    grid-area: 2 / 4 / span 5 / span 1;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+.features{
+    grid-area: 6 / 1 / span 1 / span 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+
+/* Estils dins dels elements de classe */
+
+/* DISPLAY */
+/* Element pare */
+.display{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+}
+
+/* Elements fills */
+.display > input{
+    background-color:white;
+    color: black;
+    padding: 1rem;
+}
+
+/* Especificitats de cada fill */
+#topDisplay{
+    width: 300px;
+    height: 75px;
+    font-size: 60px;
+    border-radius: 3% 3% 0 0;
+    border: 0px;
+}
+#bottomDisplay{
+    width: 300px;
+    height: 150px;
+    font-size: 60px;
+    border-radius: 0 0 3% 3%;
+    border: 0px;
+}
+
+/* BOTONS  */
+
+/* Estils comuns a tots els botons*/
+.number,
+.symbol,
+.feature{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+/* Estil botons NUMBER i FEATURE */
+.number,
+.feature{
+    background-color:#00473e;
+    color: white;
+}
+
+/* Estil botons SYMBOL*/
+.symbol{
+    background-color: #ffd803;
+}
+
+
+/* Estil botó ZERO */
+#zero{
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color:#00473e;
+    color: white; 
+}
+
+
+
+

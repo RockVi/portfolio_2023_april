@@ -1,0 +1,31 @@
+/* Estil comú dels botons */
+.bn60 {
+    background-color: rgb(22,67,166);
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border: 2px solid  rgb(22,67,166);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+}
+
+.bn60:hover{
+    transition: 1s;
+    background-color: white;
+    color: black;
+    z-index: 1;
+
+}
+
+/* Estil específic del botó de descàrrega respecte la resta de botons */
+.download-button{
+    width: auto;
+    padding: 0.5rem 1rem;
+}

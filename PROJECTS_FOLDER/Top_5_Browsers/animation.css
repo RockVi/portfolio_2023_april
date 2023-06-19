@@ -1,0 +1,13 @@
+@keyframes shaking {
+    0% { transform: translate(5px, 5.5px) rotate(0deg); }
+    10% { transform: translate(-6px, -7px) rotate(-1deg); }
+    20% { transform: translate(-7px, 6px) rotate(2deg); }
+    30% { transform: translate(7px, 7px) rotate(0deg); }
+    40% { transform: translate(6px, -6.5px) rotate(1deg); }
+    50% { transform: translate(-6px, 7px) rotate(-1deg);  }
+    60% { transform: translate(-8px, 6px) rotate(0deg); }
+    70% { transform: translate(7px, 6px) rotate(-1deg); }
+    80% { transform: translate(-6px, -6px) rotate(1deg); }
+    90% { transform: translate(6px, 6px) rotate(0deg); }
+    100% { transform: translate(6px, -7px) rotate(-1deg); }
+}

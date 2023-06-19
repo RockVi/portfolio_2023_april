@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Just+Me+Again+Down+Here&display=swap"
+    rel="stylesheet">
+  <!-- Fulls d'estils -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaQueries.css">
+  <link rel="shortcut icon" href="IMG/shopping-basket-blue.png" type="image/x-icon">
+  <title>Organic Life</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>ORGANIC</h1>
+      <h1>LIFE</h1>
+    </header>
+    <main>
+      <section class="title">
+        <h1>My Shopping List</h1>
+      </section>
+      <section class="addAProduct">
+        <!-- Camp de text per escriure el nom del producte -->
+        <input type="text" id="newProductInput" placeholder="Type a product" maxlength="30" />
+
+        <!-- Botó funcional per afegir productes-->
+        <button id="addButton" onclick="addProduct()">
+          <img src="IMG/shopping-basket.png" alt="Add To List" />
+        </button>
+
+        <!-- Botó funcional per eliminar productes-->
+        <button id="removeButton" onclick="removeAll()">
+          <img src="IMG/shopping-basket.png" alt="Add To List" />
+        </button>
+      </section>
+
+      <section class="shoppingList">
+        <!-- Llista buida que s'anirà omplint -->
+        <ul id="innerList"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

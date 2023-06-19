@@ -1,0 +1,191 @@
+/* Shared styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Vertical layout with centered content  */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.header{
+    margin-top: 150px;
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 2px;
+    color: rgb(41, 247, 151);
+}
+
+.nav{
+   width: 100%; 
+   position: fixed;
+   top: 1px;
+   z-index: 2;
+   background-color: black;
+}
+
+/* Horizontal display of navigation menu list */
+.nav > ul{
+    list-style: none;
+    display: flex;
+}
+.nav > ul > li{
+    /* each item has 25% of nav's width*/
+    flex-basis: 25%;  
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* styles */
+    font-size: 22px;
+    padding: 1rem;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+    border-left: 0.25px dotted white;
+    border-right: 0.25px dotted white;
+}
+
+.nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav li:hover{
+    background-color: #111111;
+    transition: 1s;
+}
+.nav > ul > li > a:hover{
+    color: rgb(41, 247, 151);
+    transition: 0.5s;
+}
+main{
+    margin: 80px 0px 150px 0px;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 25px;
+    max-width: 800px;
+}
+
+.footer{
+    font-family: 'IBM Plex Mono', monospace;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 1rem;
+}
+
+.email a{
+    text-decoration: none;
+    color: rgb(41, 247, 151); 
+}
+
+.socialMedia > a > img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* Home page specific styles */
+
+
+.homePageContent > h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(248, 244, 21);
+}
+
+.homePageContent > p{
+    padding: 0.5rem 0rem;
+    text-align: justify;
+}
+
+.homePageContent > .quote{
+    margin-top: 80px;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(41, 247, 151);
+    /* color: rgb(250, 46, 90);     */
+}
+
+/* Projects page specific styles */
+
+.projectsContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.project{
+    display: flex;
+    gap: 5rem;
+}
+
+.projectLink{
+    flex-basis: 60%;
+}
+.projectLink > a > img{
+    width: 500px;
+    height: auto;
+}
+
+.projectSummary{
+    flex-basis: 30%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projectSummary > button{
+    width: 125px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+}
+.projectSummary > button > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+/* Skill page specific styles */
+
+.skillsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contact Form specific styles */
+
+.contactContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

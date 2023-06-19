@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/background.svg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0px;
+}
+
+/* Per centrar el contingut i crear separacions entre header, main i footer (gap) */
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Per limitar l'amplada del header */
+header{
+    margin: 10% 5% 5% 5%;
+    padding-bottom: 5%;
+}
+
+/* Estils dels títols principals */
+h1{
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    font-size: 40px;
+}
+
+
+nav > ul{
+    /* Extreu els estils per defecte de la ul */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* FLEX responsive i centrat del menú de navegació */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nav-icon{
+    width: 150px;
+    height: auto;
+}
+
+.nav-icon:hover{
+    animation-name: shaking;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Main's Styles */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 70%;
+    margin-bottom: 10%;
+    /* Lleuger desplaçament cap a l'esquerra per donar espai al menú flotant */
+    position: relative;
+    right: 20px;
+}
+
+.card{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+/* Línies separadores entre cards (1n+2 -> múltiples d'1 començant pel segon element)*/
+.card:nth-child(1n+2){
+    border-top: 3px solid rgba(22,67,166, 0.2);
+}
+
+/* Canvi d'ordre dels elements de les fitxes 2 i 4 per crear alternància visual*/
+.card:nth-child(even) .card-icon{
+    order: 2;
+}
+
+.card-icon{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    /* Alineació individual (del propi flex-item respecte al seu pare) per augmentar l'espai superior*/
+    align-self: 3rem;
+}
+
+.card-icon{
+    /* Mesura inicial en relació al seu element germà */
+    flex-basis: 30%;
+    /* Mida máxima */
+    max-width: 450px;
+    max-height: 450px;
+}
+
+/* Tracte especial per la icona Firefox (fitxer més gran que els altres) */
+#card-1 > div > img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.card-text{
+    /* Mesura inicial en relació al seu element germà */
+    flex-basis: 70%;
+    /* Display vertical centrat i justificat*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: justify;
+}
+
+.card-text > h2{
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    font-size: 60px;
+}
+
+.intro > span{
+    font-weight: bold;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.features{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 1rem;
+}
+
+/* Mida dels textos*/
+p,
+ul{
+    font-size: 20px;
+}
+
+footer{
+    background-color: rgb(28, 26, 26);
+    color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Estil dels enllaços */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover{
+    color: rgb(22,67,166);
+}
+
+
+
+
+
+
+
+
+
+
+

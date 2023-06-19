@@ -1,0 +1,42 @@
+/* Canvi de mesures en reduïr la pantalla */
+
+@media screen and (max-width: 1200px) {
+    .container{
+        gap: 3rem;
+        margin: 3rem 5rem;
+        max-width: 100%;
+        height: 100%;
+    }
+    header > h1{
+        font-size: 80px;
+    }
+    .title > h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        margin: 3rem 4rem;
+    }
+    header > h1{
+        font-size: 60px;
+    }
+    .title > h1{
+        font-size: 40px;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    /* Modificació de flex-direction a columna */
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    header > h1{
+        font-size: 50px;
+    }
+    .title > h1{
+        font-size: 30px;
+    }
+}

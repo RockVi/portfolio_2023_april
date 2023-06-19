@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Pantalla de dades -->
+        <div class="display">
+            <input type="text" id="topDisplay" disabled>
+            <input type="text" id ="bottomDisplay" disabled>
+        </div>
+        <!-- Botons numèrics -->
+        <div class="numbers">
+            <button class="number" onclick="addNumber('7'); showString(); showTempResult()">7</button>
+            <button class="number" onclick="addNumber('8'); showString(); showTempResult()">8</button>
+            <button class="number" onclick="addNumber('9'); showString(); showTempResult()">9</button>
+            <button class="number" onclick="addNumber('4'); showString(); showTempResult()">4</button>
+            <button class="number" onclick="addNumber('5'); showString(); showTempResult()">5</button>
+            <button class="number" onclick="addNumber('6'); showString(); showTempResult()">6</button>
+            <button class="number" onclick="addNumber('1'); showString(); showTempResult()">1</button>
+            <button class="number" onclick="addNumber('2'); showString(); showTempResult()">2</button>
+            <button class="number" onclick="addNumber('3'); showString(); showTempResult()">3</button>
+            <button id="zero" onclick="addNumber('0'); showString(); showTempResult()">0</button>
+        </div>
+        <!-- Botons de símbols aritmètics -->
+        <div class="symbols">
+            <button class="symbol" onclick="addSymbol('+'); showString(); showTempResult()">+</button>
+            <button class="symbol" onclick="addSymbol('-'); showString(); showTempResult()">-</button>
+            <button class="symbol" onclick="addSymbol('*'); showString(); showTempResult()">x</button>
+            <button class="symbol" onclick="addSymbol('/'); showString(); showTempResult()">&divide;</button>
+            <button class="symbol" onclick="showLastResult()">=</button>
+        </div>
+        <!-- Botons Float i Reset -->
+        <div class="features">
+            <button class="feature" onclick="resetDisplay()">C</button>
+            <button class="feature" onclick="addSymbol('.'); showString(); showTempResult()">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

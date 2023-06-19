@@ -1,0 +1,74 @@
+.floatingMenu{
+    /* Posicionament fixe i en una capa superior*/
+    position: fixed;
+    z-index: 2;
+   
+    /* Posicionament dins de la finestra */
+    top: 28%;
+    right: 0px;
+    
+    /* Display en columna amb espais regulars (gap)*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+
+/* Estils del botó per tornar amunt */
+.arrow{
+    font-weight: 900;
+    font-size: 40px;
+    background-color: blue;
+    opacity: 0.3;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+    display: inline;
+    width: 50px;
+    height: 50px;
+
+    /* Centrant el text dins el seu contenidor pare */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Estils de les miniatures */
+.thumbnail{
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+}
+
+/* Canvis en passar el ratolí*/
+.arrow:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.thumbnail:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

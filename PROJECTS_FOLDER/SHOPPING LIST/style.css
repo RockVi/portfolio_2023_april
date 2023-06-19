@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("IMG/pexels-lumn-319798.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;   /* Necessari en aplicar 90vh de height al container més endavant */
+}
+/* Display: flex del contenidor principal per centrar-lo i donar-li marges */
+.container{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    gap: 7rem;
+    height: 90vh;
+}
+/* HEADER */
+header{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 110px;
+    transform: rotate(-12deg);
+}
+/* MAIN display */
+main{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    height: 80vh;
+}
+/* MAIN styles*/
+main{
+    padding: 1rem;
+}
+.title > h1{
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 50px;
+    font-weight: 100;
+}   
+/* SECTION "add a product" display */
+.addAProduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+/* SECTION "add-a-product" styles */
+.addAProduct > input{
+    height: 56px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.addAProduct > button{
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
+.addAProduct > button:hover{
+    transform: scale(1.1);
+    position: relative;
+    transition: 1s;
+}
+.addAProduct > button > img{
+    width: 40px;
+    height: 40px;
+    user-select: none; /* Evita que se seleccioni la icona per accident en fer doble click*/   
+}
+#addButton{
+    background-color: rgb(188, 253, 89);
+}
+#addButton:hover{
+    background-color: rgb(142, 234, 4);
+    transition: 1s;
+}
+#removeButton{
+    background-color: rgb(251, 149, 149);
+}
+#removeButton:hover{
+    background-color: rgb(252, 68, 68);
+    transition: 1s;
+}
+/* shoppingList displays & estils*/
+.shoppingList{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+    margin: 1rem auto;
+}
+#innerList{
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem; 
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid green;
+    border-radius: 10px; 
+    width: 300px;
+}
+img{
+    width: 20px;
+    height: 20px;
+    user-select: none;
+}
