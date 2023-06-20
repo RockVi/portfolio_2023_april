@@ -14,7 +14,6 @@ body{
     align-items: center;
     background-color: black;
     color: white;
-    position: relative;
     padding-bottom: 3rem;
 }
 
@@ -43,7 +42,7 @@ body{
     /* each item has 25% of nav's width*/
     flex-basis: 25%;  
 
-    /* display */
+    /* display to center the links inside 'li' items*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +61,7 @@ body{
     color: white;
 }
 
-.nav li:hover{
+.nav > ul > li:hover{
     background-color: #111111;
     transition: 1s;
 }
