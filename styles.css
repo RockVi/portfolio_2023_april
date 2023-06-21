@@ -5,9 +5,7 @@
     margin: 0px;
     padding: 0px;
 }
-html{
-    height: 100vh;
-}
+
 /* Vertical layout with centered content  */
 body{
     display: flex;
@@ -67,8 +65,6 @@ body{
     color: rgb(41, 247, 151);
     transition: 0.5s;
 }
-
-
 
 .header{
     margin-top: 150px;
@@ -247,6 +243,7 @@ main{
     height: 1px;
     background-color: white;
     border-radius: 50%;
+    /* border: 10px solid white; */
     opacity: 0;
     transition: opacity 0.5s;
     z-index: 1;
