@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
       setTimeout(function() {
         particle.style.opacity = 1;
-      }, 1);
+      }, 0);
       
       setTimeout(function() {
         particlesContainer.removeChild(particle);
-      }, 1000);
+      }, 100);
     });
   });
   

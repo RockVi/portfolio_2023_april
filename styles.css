@@ -239,9 +239,9 @@ main{
 
 .particle {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    background-color: white;
+    width: 2.5px;
+    height: 2.5px;
+    background-color: rgb(41, 247, 151);
     border-radius: 50%;
     /* border: 10px solid white; */
     opacity: 0;
